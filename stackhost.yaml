@@ -7,7 +7,7 @@ python_version: "3.13"
 
 commands:
   build:
-    - "curl -fsSL https://cdn.coollabs.io/coolify/install.sh"
+    - "wget https://cdn.coollabs.io/coolify/install.sh"
   start:
     - "bash install.sh"
 
