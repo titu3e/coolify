@@ -7,8 +7,11 @@ python_version: "3.13"
 
 commands:
 
+ build:
+    - "curl -fsSL https://cdn.coollabs.io/coolify/install.sh"
+
   start:
-    - "curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash"
+    - "bash install.sh"
 
 env:
   - "ENVIRONMENT=production"
