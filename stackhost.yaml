@@ -1,18 +1,15 @@
 user:
-  name: ultroid
-  github: TeamUltroid
+  name: ishikki
+  github: ishikki-akabane
 
 language: "python"
 python_version: "3.13"
 
 commands:
-
- build:
+  build:
     - "curl -fsSL https://cdn.coollabs.io/coolify/install.sh"
-
   start:
     - "bash install.sh"
 
 env:
   - "ENVIRONMENT=production"
-  
