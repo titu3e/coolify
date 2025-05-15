@@ -1,0 +1,15 @@
+user:
+  name: ultroid
+  github: TeamUltroid
+
+language: "python"
+python_version: "3.13"
+
+commands:
+
+  start:
+    - "curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash"
+
+env:
+  - "ENVIRONMENT=production"
+  
