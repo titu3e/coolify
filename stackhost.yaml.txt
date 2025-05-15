@@ -1,0 +1,24 @@
+user:
+  name: ultroid
+  github: TeamUltroid
+
+language: "python"
+python_version: "3.13"
+
+commands:
+  build:
+    - "apt-get update && apt-get install -y python3 python3-pip ffmpeg mediainfo neofetch git"
+    - "pip3 install -U -r requirements.txt"
+    - "pip3 install -U -r resources/startup/optional-requirements.txt"
+    - "pip3 install telethonpatch"
+  start:
+    - "bash rum"
+
+env:
+  - "ENVIRONMENT=production"
+  - "API_ID=8626831"
+  - "API_HASH=db23330a6edf4a517ee186b35cedec71"
+  - "SESSION=BQCDoo8AodPkq6aZ9ZBmcY8O7rPnJ_zBU0Yp-rSTaCTk9xmeFbgCBvK0_j-pVc0Y_ykn9Rs8r2xURhn7C11Ux1rB7u2UzX3qy3gQBG-_ymFZsCUBTalas6J-ipVauHYIYJh7uIrGeGI07dwBn43dLtC1qgSwYT8Je_XsncY_n4uZbDL5_EowgtQgXQfeEKfdHup-1D5DKD1dqvXmlIJuokdzbQwjnkDw0AdIoXgxqGwYCy6HdP9g-EwCKP4IXBFfwNa_Kucz0nYjur6Zi5roRfcgwWwCcqlTQRW6l86m4qoiJAgzZnpGRlLqbAGjB9EVjGpgD4L9LtAdTM-9VaoDSj2JJmYOcwAAAABe-GjtAA"
+  - "DATABASE_URL=postgresql://teldrive_owner:ruPD3GSlN4Uj@ep-ancient-water-a52cg1yc-pooler.us-east-2.aws.neon.tech/teldrive?sslmode=require"
+  - "LOG_CHANNEL=-1002252562226"
+  - "BOT_TOKEN=7629566246:AAFf1eng2c1D1q9ipoott14lbPZOXQKuxJQ"
